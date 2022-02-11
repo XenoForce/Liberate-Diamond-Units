@@ -1,0 +1,117 @@
+type: UnitFactory
+name: "Dia-Air-Factory"
+description: "Diamond Air Factory"
+
+health: 99000
+size: 3
+itemCapacity: 30
+
+consumes: {}
+	
+plans: [
+
+	{
+		unit: strike
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: storm
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: tempest
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: hurricane
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: purger
+		requirements: []
+		time: 90
+	}
+	
+//--------------------------------------------------	
+
+	,
+	{
+		unit: scout
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: fighter
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: destroyer
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: cruiser
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: battleship
+		requirements: []
+		time: 90
+	}
+
+//--------------------------------------------------
+
+	,
+	{
+		unit: gnat
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: firefly
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: beetle
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: scarab
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: cicada
+		requirements: []
+		time: 90
+	}
+
+]
+
+requirements: [ ]
+buildCostMultiplier: 0.1
+
+category: units
+research: duo
+
+alwaysUnlocked: true

@@ -1,0 +1,112 @@
+localizedName: Firefly
+description: Flies toward ground enemies and explodes, releasing incendiary sludge.
+
+health: 400
+armor: 10
+
+commandLimit: 4
+
+speed: 3.5
+drag: 0.1
+accel: 0.2
+rotateSpeed: 3.5
+lightRadius: 200
+lightOpacity: 1.174
+range: 240
+itemCapacity: 100
+hitSize: 9
+crashDamageMultiplier: 9
+rotateShooting: false
+circleTarget: true
+immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
+engineOffset: 7
+engineSize: 7
+targetAir: false
+lowAltitude: true
+destructibleWreck: false
+flying: true
+
+weapons:[
+  {
+    name: firefly-weapon
+    x: 0
+    y: 0
+    shootY: 0
+    recoil: 0
+    reload: 120
+    rotate: false
+    mirror: false
+	ignoreRotation: true
+    soundPitchMin: 1.5
+    soundPitchMax: 1.5
+    velocityRnd: 1
+    lengthRand: 1
+    shots: 20
+    shootSound: explosionbig
+	inaccuracy: 360
+	shootCone: 360
+    bullet: {
+    type: BombBulletType
+    speed: 3
+	range: 24
+	drag: 0.0125
+	lifetime: 15
+	incendAmount: 6
+	incendSpread: 20
+	incendChance: 1
+	killShooter: true
+	keepVelocity: true
+    damage: 25
+    width: 14
+    height: 18
+	frontColor: ffcc44
+	backColor: ea690f
+	//trailColor: 666666
+    shootEffect: flakExplosion
+    smokeEffect: shockwave
+    despawnEffect: flakExplosion
+	hitEffect: hitLancer
+	pierce: false
+	knockback: 1
+	bulletSprite: shell
+	fragBullets: 4
+	splashDamage: 40
+	splashDamageRadius: 36
+	status: burning
+	statusDuration: 600
+	fragBullets: 6
+	fragVelocityMin: 0.15
+	fragVelocityMax: 0.75
+	fragBullet: {
+        type: LiquidBulletType
+        //keepVelocity: true
+		drag: 0.075
+	    lifetime: 150
+        damage: 3
+		incendAmount: 6
+		incendSpread: 20
+		incendChance: 0.6
+	    collidesAir: false
+        width: 15
+        height: 15
+	    despawnEffect: none
+	    hitEffect: none
+	    frontColor: f0511d
+	    backColor: f0511d
+	    pierce: true
+		status: burning
+		statusDuration: 900
+		liquid: oil
+	    //bulletSprite: shell
+	    //knockback: 7.5
+      }
+    }
+  }
+]
+
+research:{
+  parent: gnat
+  requirements:[ copper/1 ]
+}
+
+alwaysUnlocked: true

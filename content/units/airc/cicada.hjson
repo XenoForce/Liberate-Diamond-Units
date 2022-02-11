@@ -1,0 +1,182 @@
+localizedName: Cicada
+description: Fires massive cluster-missiles and a barrage of large armor-piercing bullets at all nearby enemies. Explodes upon destruction. Capable of carrying most ground units.
+
+health: 31000
+armor: 25
+
+commandLimit: 11
+
+speed: 3.5
+drag: 0.015
+accel: 0.024
+buildSpeed: 3.75
+rotateSpeed: 1.5
+lightColor: ffe367
+lightRadius: 120
+lightOpacity: 0.4
+range: 240
+maxRange: 480
+aimDst: 36
+itemCapacity: 500
+hitSize: 22
+payloadCapacity: 2200
+rotateShooting: false
+singleTarget: false
+lowAltitude: true
+destructibleWreck: false
+immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
+engineOffset: 0
+engineSize: 16
+hovering: true
+flying: true
+
+weapons:[
+  {
+    name: cicada-weapon-mount
+    x: 14
+    y: 14
+    shootY: 11
+    recoil: 0
+    reload: 9.99
+    rotate: true
+    rotateSpeed: 8
+    soundPitchMin: 0.7
+    soundPitchMax: 0.8
+	occlusion: 16
+    shootSound: boom
+    bullet:{
+      type: BasicBulletType
+	  frontColor: b28768
+	  hitColor: eab678
+      shootEffect: shootBig2
+      hitEffect: shootBig2
+      despawnEffect: shootBig
+      width: 15
+      height: 27
+	  shrinkX: 0.2
+	  shrinkY: 0.4
+	  range: 320
+      speed: 8
+	  damage: 60
+	  hittable: false
+	  pierce: true
+	  pierceCap: 4
+    }
+  },
+  {
+    name: cicada-weapon-mount
+    x: 19
+    y: -5
+    shootY: 11
+    recoil: 0
+    reload: 10
+    rotate: true
+	occlusion: 16
+    rotateSpeed: 8
+    soundPitchMin: 0.7
+    soundPitchMax: 0.8
+    shootSound: boom
+    bullet:{
+      type: BasicBulletType
+	  frontColor: b28768
+	  hitColor: eab678
+      shootEffect: shootBig2
+      hitEffect: shootBig2
+      despawnEffect: shootBig
+      width: 15
+      height: 27
+	  shrinkX: 0.2
+	  shrinkY: 0.4
+	  range: 320
+      speed: 8
+	  damage: 60
+	  hittable: false
+	  pierce: true
+	  pierceCap: 4
+    }
+  },
+  {
+    name: cicada-cannon
+    x: 0
+    y: -15
+    shootY: 28
+    recoil: 4
+    reload: 120
+	inaccuracy: 2
+	rotateSpeed: 1.73
+	cooldownTime: 110
+	occlusion: 30
+    rotate: true
+    mirror: false
+    soundPitchMin: 0.72
+    soundPitchMax: 0.94
+    shootSound: corexplode
+    bullet:{
+      type: FlakBulletType
+	  frontColor: b28768
+	  backColor: b28768
+	  explodeRange: 140
+      width: 21
+      height: 31
+	  shrinkX: 0
+	  shrinkY: 0
+      speed: 6
+	  range: 480
+	  trailColor: b28768
+	  trailChance: 1
+	  trailEffect: absorb
+	  hitColor: c9a58f
+	  lightColor: b28768
+	  homingPower: 0.0546
+	  homingRange: 184
+	  hitEffect: massiveExplosion
+	  shootEffect: shootLiquid
+	  smokeEffect: shootLiquid
+	  despawnEffect: flakExplosionBig
+      sprite: libdiaux-diamondconcus
+      lifetime: 80
+	  damage: 64
+	  splashDamage: 256
+	  splashDamageRadius: 128
+	  fragBullets: 15
+	  fragVelocityMin: 0.6
+	  fragVelocityMax: 1.4
+	  fragCone: 45
+	  reflectable: false
+	  hittable: false
+	  collidesGround: true
+	  fragBullet:{
+        type: MissileBulletType
+        //sapStrength: 0.5
+	    frontColor: c9a58f
+	    trailColor: c9a58f
+	    backColor: b28768
+	    hitColor: b28768
+        width: 4
+        height: 6
+        speed: 5
+        weaveMag: 2
+        weaveScale: 2
+	    shrinkX: 0
+	    shrinkY: 0
+        sprite: missile
+	    despawnEffect: hitBulletBig
+	    hitEffect: hitBulletBig
+        lifetime: 110
+	    damage: 12
+	    homingPower: 0.13967
+	    homingRange: 256
+	    splashDamage: 18
+	    splashDamageRadius: 18
+		hittable: false
+      }
+    }
+  }
+]
+
+research: {
+  parent: scarab
+  requirements:[ copper/1 ]
+}
+
+alwaysUnlocked: true

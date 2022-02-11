@@ -1,0 +1,51 @@
+type: UnitFactory
+name: "Dia-Sky-Factory"
+description: "Diamond Sky Factory"
+
+health: 99000
+size: 3
+itemCapacity: 30
+
+consumes: {}
+	
+plans: [
+
+	{
+		unit: siren
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: serpent
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: scylla
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: charybdis
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: leviathan
+		requirements: []
+		time: 90
+	}
+
+]
+
+requirements: [ ]
+buildCostMultiplier: 0.1
+
+category: units
+research: duo
+
+alwaysUnlocked: true

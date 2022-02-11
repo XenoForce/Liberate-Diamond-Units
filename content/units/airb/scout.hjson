@@ -1,0 +1,73 @@
+localizedName: Scout
+description: Fires salvos of standard bullets at all nearby enemies.
+
+health: 200
+armor: 8
+
+commandLimit: 3
+
+speed: 4
+drag: 0.01
+accel: 0.1
+rotateSpeed: 8.7
+range: 1600
+maxRange: 80
+itemCapacity: 30
+aimDst: 12
+hitSize: 5
+rotateShooting: false
+fallThrusterEffect: coreBurn
+lowAltitude: false
+circleTarget: true
+omniMovement: false
+destructibleWreck: false
+engineOffset: 5
+engineSize: 2
+flying: true
+trailLength: 0
+trailX: 0
+trailY: 0
+trailScl: 0
+
+weapons:[
+  {
+    name: spcair-blaster
+    x: 6
+    y: 0
+    shootY: 2
+    recoil: 2
+    reload: 28
+    shootCone: 40
+    shots: 4
+    shotDelay: 4
+    spacing: 0
+    inaccuracy: 3
+    rotate: false
+    ignoreRotation: true
+    soundPitchMin: 0.9
+    soundPitchMax: 1.1
+    shootSound: scoutSalvo
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  hitEffect: hitLiquid
+	  despawnEffect: none
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 11
+	  width: 4.5
+	  height: -9
+	  shrinkY: 0
+	  speed: 12
+	  lifetime: 14
+	  sprite: libdiaux-diamondshard
+    }
+  }
+]
+
+research:{
+  parent: diaairfactory
+  requirements:[ copper/1 ]
+}
+
+alwaysUnlocked: true

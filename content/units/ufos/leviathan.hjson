@@ -1,0 +1,192 @@
+localizedName: Leviathan
+description: Fires a barrage of massive sapping laser beams at nearby enemies, repairing itself in the process. Regenerates health. Constructs Risso units.
+
+health: 16000
+armor: 30
+
+commandLimit: 8
+flying: true
+
+speed: 3.5
+drag: 0.1095
+accel: 0.1564
+rotateSpeed: 2.425
+mineSpeed: 5
+mineTier: 4
+lightRadius: 120
+lightColor: bf92f9
+range: 600
+itemCapacity: 320
+hitSize: 24
+hitSizeTile: 15
+rotateShooting: false
+immunities: [wet, sapped, sporeSlowed, corroded]
+trailLength: 40
+trailX: 0
+trailY: -18
+
+weapons:[
+  {
+    name: large-purple-mount
+    x: 17
+    y: -8
+    shootY: 8
+    recoil: 0
+    reload: 36.036
+    rotate: true
+	rotateSpeed: 5
+    soundPitchMin: 1.8
+    soundPitchMax: 1.9
+    shootSound: plasmaboom
+    bullet:{
+      type: SapBulletType
+      sapStrength: 1.05
+	  color: bf92f9
+	  hitColor: bf92f9
+      width: 1.75
+      length: 400
+      lifetime: 30
+	  damage: 75
+	  knockback: -2
+	  hittable: false
+	  shootEffect: shootSmall
+	  smokeEffect: shootLiquid
+    }
+  },
+  {
+    name: large-purple-mount
+    x: -17
+    y: 4
+    shootY: 8
+    recoil: 0
+    reload: 36
+    rotate: true
+    flipSprite: true
+	rotateSpeed: 5
+    soundPitchMin: 1.8
+    soundPitchMax: 1.9
+    shootSound: plasmaboom
+    bullet:{
+      type: SapBulletType
+      sapStrength: 1.75
+	  color: bf92f9
+	  hitColor: bf92f9
+      width: 2.5
+      length: 400
+      lifetime: 30
+	  damage: 75
+	  knockback: -2
+	  hittable: false
+	  shootEffect: shootSmall
+	  smokeEffect: shootLiquid
+    }
+  },
+  {
+    name: large-purple-mount
+    x: 17
+    y: 14.3
+    shootY: 8
+    recoil: 0
+    reload: 36.01
+    rotate: true
+	rotateSpeed: 5
+    soundPitchMin: 1.8
+    soundPitchMax: 1.9
+    shootSound: plasmaboom
+    bullet:{
+      type: SapBulletType
+      sapStrength: 1.05
+	  color: bf92f9
+	  hitColor: bf92f9
+      width: 1.75
+      length: 400
+      lifetime: 30
+	  damage: 75
+	  knockback: -2
+	  hittable: false
+	  shootEffect: shootSmall
+	  smokeEffect: shootLiquid
+    }
+  },
+  {
+    name: leviathan-shrapnel
+    x: 0
+    y: 5
+    shootY: 4
+    recoil: 0
+    reload: 10
+	shots: 3
+	inaccuracy: 15
+    rotate: true
+	rotateSpeed: 15
+    alternate: true
+    soundPitchMin: 2.5
+    soundPitchMax: 3.8
+    shootSound: sap
+    bullet:{
+      type: ShrapnelBulletType
+      //sapStrength: 0.5
+      fromColor: bf92f9
+      hitColor: bf92f9
+      toColor: 6449bf
+      length: 200
+	  width: 8
+	  damage: 25
+	  knockback: 0.7
+	  serrations: 25
+	  serrationWidth: 10
+	  serrationSpacing: 8
+	  serrationSpaceOffset: 3
+	  serrationFadeOffset: 0.7
+	  hitEffect: mine
+	  hitLarge: true
+    }
+  },
+  {
+    name: leviathan-sapper
+    x: 0
+    y: 29
+    shootY: 14
+    recoil: -8
+    reload: 90
+	shootCone: 0
+	cooldownTime: 90
+	heatColor: 9955cf
+    rotate: true
+    mirror: false
+	rotateSpeed: 0.85
+    soundPitchMin: 2.5
+    soundPitchMax: 2.5
+    shootSound: laserblast
+	shootStatus: shielded
+	shootStatusDuration: 20
+    bullet:{
+      type: SapBulletType
+      sapStrength: 1.5
+	  color: 7955bf
+	  backColor: 6449bf
+	  hitColor: bf92f9
+	  statusDuration: 600
+      width: 5
+      length: 600
+      lifetime: 30
+	  damage: 400
+	  knockback: -15
+	  splashDamage: 300
+	  splashDamageRadius: 32
+	  hitEffect: sapExplosion
+	  hitSize: 4
+	  absorbable: false
+	  reflectable: false
+	  shootEffect: shootLiquid
+	  smokeEffect: shootLiquid
+    }
+  }
+]
+
+research: {
+  parent: charybdis
+  requirements: [ copper/1 ]
+}
+
+alwaysUnlocked: true

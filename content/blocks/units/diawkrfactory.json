@@ -1,0 +1,87 @@
+type: UnitFactory
+name: "Dia-Wkr-Factory"
+description: "Diamond Worker Factory"
+
+health: 99000
+size: 3
+itemCapacity: 30
+
+consumes: {}
+	
+plans: [
+
+/*
+	{
+		unit: spriite
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: gnome
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: pixie
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: nymph
+		requirements: []
+		time: 90
+	}
+	,
+	{
+		unit: goblin
+		requirements: []
+		time: 90
+	}
+*/
+	
+//-----------------------------------------------------
+	
+//	,
+
+	{
+		unit: sparrow
+		requirements: []
+		time: 90
+	}
+		,
+	{
+		unit: crow
+		requirements: []
+		time: 90
+	}
+		,
+	{
+		unit: owl
+		requirements: []
+		time: 90
+	}
+		,
+	{
+		unit: falcon
+		requirements: []
+		time: 90
+	}
+		,
+	{
+		unit: vulture
+		requirements: []
+		time: 90
+	}
+
+]
+
+requirements: [ ]
+buildCostMultiplier: 0.1
+
+category: units
+research: duo
+
+alwaysUnlocked: true

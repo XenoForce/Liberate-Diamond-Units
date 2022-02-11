@@ -1,0 +1,102 @@
+localizedName: Fighter
+description: Fires salvos of fragmenting bullets at all nearby enemies.
+
+health: 400
+armor: 20
+
+commandLimit: 6
+
+speed: 3.5
+drag: 0.0375
+accel: 0.045
+rotateSpeed: 3.75
+lightRadius: 70
+lightOpacity: 0.474
+range: 1200
+maxRange: 120
+itemCapacity: 70
+fallThrusterEffect: coreBurn
+aimDst: 30
+hitSize: 9
+crashDamageMultiplier: 3
+rotateShooting: false
+omniMovement: false
+circleTarget: true
+engineOffset: 6
+engineSize: 4
+lowAltitude: false
+destructibleWreck: false
+flying: true
+trailLength: 0
+trailX: 0
+trailY: 0
+trailScl: 0
+
+weapons:[
+  {
+    name: spcair-blaster-big
+    x: 8
+    y: -4
+    shootY: 17
+    recoil: 3
+    reload: 45
+    rotate: false
+	ignoreRotation: true
+    soundPitchMin: 1.5
+    soundPitchMax: 1.5
+    shots: 3
+    velocityRnd: 0.251
+    shootSound: shootSnap
+	inaccuracy: 7.5
+	shootCone: 15
+    bullet: {
+    type: BasicBulletType
+    speed: 9
+	lifetime: 15
+	keepVelocity: true
+    damage: 15
+    width: 8
+    height: 15
+	frontColor: ffffff
+	backColor: ffffff
+	//trailColor: 666666
+    shootEffect: flakExplosion
+    smokeEffect: shockwave
+    despawnEffect: flakExplosion
+	hitEffect: hitLancer
+	pierce: false
+	bulletSprite: shell
+	fragBullets: 4
+	splashDamage: 16
+	splashDamageRadius: 11
+	fragBullets: 4
+	fragCone: 22.5
+	fragVelocityMin: 0.15
+	fragVelocityMax: 1.75
+	fragBullet: {
+        type: BasicBulletType
+        //keepVelocity: true
+		speed: 3
+	    lifetime: 26
+        damage: 6
+		lightRadius: 0
+	    collidesAir: false
+        width: 4
+        height: -7.8
+	    despawnEffect: none
+	    hitEffect: none
+	    knockback: 1
+	    frontColor: aaaaaa
+	    backColor: ffffff
+	    sprite: libdiaux-diamondshard
+      }
+    }
+  }
+]
+
+research:{
+  parent: scout
+  requirements:[ copper/1 ]
+}
+
+alwaysUnlocked: true
