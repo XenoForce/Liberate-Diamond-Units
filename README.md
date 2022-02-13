@@ -17,7 +17,7 @@ I worked around most issues, but a few small problems I could not fix.
 
 <br>
 
-Right now, this mod provides 3 factory buildings, so that you can build (and use) most of the Diamond Ore units.
+Right now, this mod provides 3 factory buildings, so that you can build (and use) most of the Diamond Ore units. {No reconstructor blocks are necessary.}
 
 <br>
 
