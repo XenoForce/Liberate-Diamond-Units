@@ -5,8 +5,6 @@ Provides easy access to units from Diamond Ore mod.
 
 **Notes:**
 
-<br>
-
 This mod basically gives you easy access to the units from the Diamond Ore mod.
 
 <br>
