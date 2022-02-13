@@ -21,6 +21,10 @@ Right now, this mod provides 3 factory buildings, so that you can build (and use
 
 <br>
 
+There is no need to research any of these units. They are all unlocked by default.
+
+<br>
+
 This mod can be used in the campaign, to get an extra boost of units, which are a bit stronger than most of the vanilla in-game units.
 
 <br>
