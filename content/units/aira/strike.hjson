@@ -29,6 +29,51 @@ lowAltitude: true
 destructibleWreck: false
 flying: true
 
+weapons:[
+  {
+    name: storm-weapon
+    x: 7
+    y: 0
+    shootY: 4
+    recoil: 3
+    reload: 45
+	shots: 3
+	shotDelay: 5
+	spacing: 2
+	inaccuracy: 2
+	velocityRnd: 0.05
+	rotateSpeed: 8
+	occlusion: 6
+    rotate: true
+    soundPitchMin: 0.92
+    soundPitchMax: 1.04
+    shootSound: stormSalvo
+    bullet:{
+      type: BasicBulletType
+      //sapStrength: 0.5
+	  frontColor: edff77
+	  backColor: ffff00
+      width: 5
+      height: 9
+	  shrinkX: 0
+	  shrinkY: 0
+      speed: 4
+	  hitColor: 999999
+	  lightColor: ffff00
+	  lightningColor: ffff00
+	  lightningLength: 4
+	  lightningLengthRand: 6
+	  lightningDamage: 9
+	  lightning: 6
+	  hitEffect: mineBig
+	  despawnEffect: none
+      sprite: shell
+      lifetime: 75
+	  damage: 14
+	  reflectable: false
+    }
+  },
+]
 
 research: {
   parent: diaairfactory
