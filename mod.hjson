@@ -2,5 +2,5 @@ name: "libdiaux"
 displayName: "Liberate Diamond Units"     //This displays in the mod selection menu.
 author: "XenoTale"
 description: "Free access to Units from Diamond Ore mod."
-version: "1.0"
+version: "1.1"
 minGameVersion: "136"

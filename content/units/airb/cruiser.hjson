@@ -21,7 +21,7 @@ circleTarget: false
 fallEffect: flakExplosion
 fallThrusterEffect: melting
 fallSpeed: 0.0071064
-immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
+immunities: [wet, tarred, sapped, corroded, burning, melting]
 engineOffset: 30
 engineSize: 5
 hovering: true
@@ -219,7 +219,21 @@ weapons:[
     soundPitchMin: 2.12
     soundPitchMax: 2.74
     shootSound: boom
-    bullet:fragSurge
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
   },
   {
     name: spcair-blaster-big
@@ -239,7 +253,21 @@ weapons:[
     soundPitchMin: 2.12
     soundPitchMax: 2.74
     shootSound: boom
-    bullet:fragSurge
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
   }
 ]
 

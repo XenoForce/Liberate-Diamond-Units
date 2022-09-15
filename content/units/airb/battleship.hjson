@@ -29,7 +29,7 @@ lowAltitude: true
 destructibleWreck: false
 fallEffect: flakExplosionBig
 fallThrusterEffect: none
-immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting, freezing, tarred, muddy, slow]
+immunities: [wet, tarred, sapped, corroded, burning, melting, freezing, tarred, muddy, slow]
 fallSpeed: 0.00214
 engineOffset: 70
 engineSize: 6
@@ -77,7 +77,7 @@ weapons:[
       trailChance: 1
       despawnEffect: massiveExplosion
       shootEffect: lancerLaserChargeBegin
-      smokeEffect: impactsmoke
+      smokeEffect: none
       width: 20
       height: 20
       sprite: libdiaux-diamondbullet
@@ -143,7 +143,21 @@ weapons:[
     shootCone: 1
 	occlusion: 4
     shootSound: missile
-    bullet: missileExplosive
+
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
     top: false
   },
   {
@@ -163,7 +177,21 @@ weapons:[
     shootCone: 1
 	occlusion: 4
     shootSound: missile
-    bullet: missileExplosive
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
     top: false
   },
   {
@@ -183,7 +211,21 @@ weapons:[
     shootCone: 1
 	occlusion: 4
     shootSound: missile
-    bullet: missileExplosive
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
     top: false
   },
   {

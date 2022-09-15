@@ -15,7 +15,7 @@ range: 240
 itemCapacity: 250
 hitSize: 17
 rotateShooting: true
-immunities: [wet, tarred, sapped, sporeSlowed, corroded, burning, melting]
+immunities: [wet, tarred, sapped, corroded, burning, melting]
 engineOffset: 16
 engineSize: 5
 hovering: true
@@ -128,7 +128,21 @@ weapons:[
     soundPitchMin: 0.52
     soundPitchMax: 0.74
     shootSound: flame
-    bullet: heavyOilShot
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
   },
   {
     name: scarab-vomit-slag
@@ -148,7 +162,21 @@ weapons:[
     soundPitchMin: 0.52
     soundPitchMax: 0.74
     shootSound: flame2
-    bullet: heavySlagShot
+    
+    bullet:{
+      type: BasicBulletType
+	  hitColor: 888888
+	  despawnEffect: hitLiquid
+	  frontColor: ffffff
+	  backColor: ffffff
+      damage: 9
+	  width: 2
+	  height: -9
+	  shrinkY: 0.5
+	  speed: 10
+	  lifetime: 20
+	  sprite: libdiaux-diamondshard
+    }
   }
 ]
 

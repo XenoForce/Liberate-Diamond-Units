@@ -20,7 +20,7 @@ itemCapacity: 320
 hitSize: 24
 hitSizeTile: 15
 rotateShooting: false
-immunities: [wet, sapped, sporeSlowed, corroded]
+immunities: [wet, sapped, corroded]
 trailLength: 40
 trailX: 0
 trailY: -18
