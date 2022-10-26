@@ -1,7 +1,7 @@
 name: "libdiaux"
-displayName: "Liberate Diamond Units"     //This displays in the mod selection menu.
-author: "XenoTale"
+displayName: Diamond Ore Units - Liberated
+author: goldie
 description: "Free access to Units from Diamond Ore mod."
-version: "1.1"
+version: "1.1.1"
 minGameVersion: "136"
 hideBrowser: false
